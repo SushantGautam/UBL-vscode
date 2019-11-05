@@ -1,0 +1,71 @@
+{
+  "name": "ublrandd-devpack",
+  "displayName": "UBL R&D Devpack",
+  "description": "Extionsions for developers of UbL R&D Center for Management Integration in VS Code.",
+  "icon": "https://i.ibb.co/jzMrtwX/UBL-R-D-Nepal-high-quality-Copy.png",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.helloWorld",
+    "onCommand:attendance.helloWorld",
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "attendance.helloWorld",
+        "title": "Attendance"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "package-explorer",
+          "title": "UBL R&D",
+          "icon": "resources/ubl.svg"
+        }
+      ]
+    },
+    "views": {
+      "package-explorer": [
+        {
+          "id": "package-dependencies",
+          "name": "Dependencies"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "attendance.helloWorld",
+          "when": "view == package-dependencies",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.39.0",
+    "eslint": "^6.6.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "vscode-test": "^1.2.2"
+  }
+}
