@@ -4,7 +4,7 @@
   "publisher": "sushantgautam",
   "description": "Extionsions for developers of UbL R&D Center for Management Integration in VS Code.",
   "icon": "resources/ubl.svg",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "engines": {
     "vscode": "^1.39.0"
   },
