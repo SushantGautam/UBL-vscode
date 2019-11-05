@@ -3,7 +3,7 @@
   "displayName": "UBL R&D Devpack",
   "publisher": "sushantgautam",
   "description": "Extionsions for developers of UbL R&D Center for Management Integration in VS Code.",
-  "icon": "resources/ubl.svg",
+  "icon": "resources/ubl.png",
   "version": "0.4.0",
   "engines": {
     "vscode": "^1.39.0"
